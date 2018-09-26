@@ -1,7 +1,7 @@
 ## Codebook
 
 
-###75 variables in total
+75 variables in total
 
 The first variable is the subject, and the second variable is the activity types, including walking, walking upstairs, walking downstairs, sitting, standing, and laying. 
 The rest 73 variables are the measurements on the mean and standard deviation for each measurement of the original data set.
