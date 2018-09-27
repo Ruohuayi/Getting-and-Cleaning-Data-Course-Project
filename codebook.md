@@ -1,33 +1,95 @@
-## Codebook
+# Codebook
 
 
-75 variables in total
+## Source data set information
 
-The first variable is the subject, and the second variable is the activity types, including walking, walking upstairs, walking downstairs, sitting, standing, and laying. 
-The rest 73 variables are the measurements on the mean and standard deviation for each measurement of the original data set.
+The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data. 
 
- [1] "subject"                              "activity_type"                        "tBodyAcc-mean()-X"                   
- [4] "tBodyAcc-mean()-Y"                    "tBodyAcc-mean()-Z"                    "tGravityAcc-mean()-X"                
- [7] "tGravityAcc-mean()-Y"                 "tGravityAcc-mean()-Z"                 "tBodyAccJerk-mean()-X"               
-[10] "tBodyAccJerk-mean()-Y"                "tBodyAccJerk-mean()-Z"                "tBodyGyro-mean()-X"                  
-[13] "tBodyGyro-mean()-Y"                   "tBodyGyro-mean()-Z"                   "tBodyGyroJerk-mean()-X"              
-[16] "tBodyGyroJerk-mean()-Y"               "tBodyGyroJerk-mean()-Z"               "tBodyAccMag-mean()"                  
-[19] "tGravityAccMag-mean()"                "tBodyAccJerkMag-mean()"               "tBodyGyroMag-mean()"                 
-[22] "tBodyGyroJerkMag-mean()"              "fBodyAcc-mean()-X"                    "fBodyAcc-mean()-Y"                   
-[25] "fBodyAcc-mean()-Z"                    "fBodyAccJerk-mean()-X"                "fBodyAccJerk-mean()-Y"               
-[28] "fBodyAccJerk-mean()-Z"                "fBodyGyro-mean()-X"                   "fBodyGyro-mean()-Y"                  
-[31] "fBodyGyro-mean()-Z"                   "fBodyAccMag-mean()"                   "fBodyBodyAccJerkMag-mean()"          
-[34] "fBodyBodyGyroMag-mean()"              "fBodyBodyGyroJerkMag-mean()"          "angle(tBodyAccMean,gravity)"         
-[37] "angle(tBodyAccJerkMean),gravityMean)" "angle(tBodyGyroMean,gravityMean)"     "angle(tBodyGyroJerkMean,gravityMean)"
-[40] "angle(X,gravityMean)"                 "angle(Y,gravityMean)"                 "angle(Z,gravityMean)"                
-[43] "tBodyAcc-std()-X"                     "tBodyAcc-std()-Y"                     "tBodyAcc-std()-Z"                    
-[46] "tGravityAcc-std()-X"                  "tGravityAcc-std()-Y"                  "tGravityAcc-std()-Z"                 
-[49] "tBodyAccJerk-std()-X"                 "tBodyAccJerk-std()-Y"                 "tBodyAccJerk-std()-Z"                
-[52] "tBodyGyro-std()-X"                    "tBodyGyro-std()-Y"                    "tBodyGyro-std()-Z"                   
-[55] "tBodyGyroJerk-std()-X"                "tBodyGyroJerk-std()-Y"                "tBodyGyroJerk-std()-Z"               
-[58] "tBodyAccMag-std()"                    "tGravityAccMag-std()"                 "tBodyAccJerkMag-std()"               
-[61] "tBodyGyroMag-std()"                   "tBodyGyroJerkMag-std()"               "fBodyAcc-std()-X"                    
-[64] "fBodyAcc-std()-Y"                     "fBodyAcc-std()-Z"                     "fBodyAccJerk-std()-X"                
-[67] "fBodyAccJerk-std()-Y"                 "fBodyAccJerk-std()-Z"                 "fBodyGyro-std()-X"                   
-[70] "fBodyGyro-std()-Y"                    "fBodyGyro-std()-Z"                    "fBodyAccMag-std()"                   
-[73] "fBodyBodyAccJerkMag-std()"            "fBodyBodyGyroMag-std()"               "fBodyBodyGyroJerkMag-std()"     
+The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain.
+
+
+## Variables of the data set
+
+There are 75 variables in total. They can be broken down into 3 sections
+1. subject, integer from 1 to 30, being an ID for each test subject
+2. activity_type, including WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, and LAYING 
+3. 73 variables are the values of mean and standard deviation for each measurement of the original data set.
+
+
+## List of variables
+
+subject                             
+activity_type                        
+tBodyAcc-mean()-X                  
+tBodyAcc-mean()-Y                   
+tBodyAcc-mean()-Z                   
+tGravityAcc-mean()-X                
+tGravityAcc-mean()-Y                 
+tGravityAcc-mean()-Z               
+tBodyAccJerk-mean()-X     
+tBodyAccJerk-mean()-Y                
+tBodyAccJerk-mean()-Z               
+tBodyGyro-mean()-X                  
+tBodyGyro-mean()-Y                  
+tBodyGyro-mean()-Z                 
+tBodyGyroJerk-mean()-X              
+tBodyGyroJerk-mean()-Y              
+tBodyGyroJerk-mean()-Z              
+tBodyAccMag-mean()                 
+tGravityAccMag-mean()               
+tBodyAccJerkMag-mean()              
+tBodyGyroMag-mean()                
+tBodyGyroJerkMag-mean()            
+fBodyAcc-mean()-X                
+fBodyAcc-mean()-Y                
+fBodyAcc-mean()-Z                   
+fBodyAccJerk-mean()-X              
+fBodyAccJerk-mean()-Y          
+fBodyAccJerk-mean()-Z
+fBodyGyro-mean()-X                
+fBodyGyro-mean()-Y                  
+fBodyGyro-mean()-Z
+fBodyAccMag-mean()
+fBodyBodyAccJerkMag-mean()          
+fBodyBodyGyroMag-mean()             
+fBodyBodyGyroJerkMag-mean()          
+angle(tBodyAccMean,gravity)"         
+angle(tBodyAccJerkMean),gravityMean)
+angle(tBodyGyroMean,gravityMean)
+angle(tBodyGyroJerkMean,gravityMean)
+angle(X,gravityMean)
+angle(Y,gravityMean)
+angle(Z,gravityMean)                
+tBodyAcc-std()-X
+tBodyAcc-std()-Y
+tBodyAcc-std()-Z                    
+tGravityAcc-std()-X
+tGravityAcc-std()-Y
+tGravityAcc-std()-Z             
+tBodyAccJerk-std()-X
+tBodyAccJerk-std()-Y
+tBodyAccJerk-std()-Z               
+tBodyGyro-std()-X
+tBodyGyro-std()-Y
+tBodyGyro-std()-Z                 
+tBodyGyroJerk-std()-X
+tBodyGyroJerk-std()-Y
+tBodyGyroJerk-std()-Z               
+tBodyAccMag-std()
+tGravityAccMag-std()
+tBodyAccJerkMag-std()               
+tBodyGyroMag-std()
+tBodyGyroJerkMag-std()
+fBodyAcc-std()-X                    
+fBodyAcc-std()-Y
+fBodyAcc-std()-Z
+fBodyAccJerk-std()-X               
+fBodyAccJerk-std()-Y
+fBodyAccJerk-std()-Z
+fBodyGyro-std()-X"                   
+fBodyGyro-std()-Y
+fBodyGyro-std()-Z
+fBodyAccMag-std()"                   
+fBodyBodyAccJerkMag-std()
+fBodyBodyGyroMag-std()
+fBodyBodyGyroJerkMag-std()   
