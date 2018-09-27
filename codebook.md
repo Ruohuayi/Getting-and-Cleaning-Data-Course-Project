@@ -11,9 +11,9 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
 ## Variables of the data set
 
 There are 75 variables in total. They can be broken down into 3 sections
-1. subject, integer from 1 to 30, being an ID for each test subject
-2. activity_type, including WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, and LAYING 
-3. 73 variables are the values of mean and standard deviation for each measurement of the original data set.
+* subject, integer from 1 to 30, being an ID for each test subject
+* activity_type, including WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, and LAYING 
+* 73 variables are the values of mean and standard deviation for each measurement of the original data set.
 
 
 ## List of variables
